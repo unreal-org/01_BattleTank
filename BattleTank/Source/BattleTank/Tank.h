@@ -8,6 +8,7 @@
 
 class UTankBarrel; // forward declaration
 class UTankAimingComponent;
+class UTankTurret;
 
 UCLASS()
 class BATTLETANK_API ATank : public APawn
@@ -36,6 +37,9 @@ public:
 
 	UFUNCTION(BlueprintCallable, Category = "Setup")    // makes function callable from blueprint
 	void SetBarrelReference(UTankBarrel* BarrelToSet);
+
+	UFUNCTION(BlueprintCallable, Category = "Setup")    // makes function callable from blueprint
+	void SetTurretReference(UTankTurret* TurretToSet);
 
 	UPROPERTY(EditAnywhere, Category = "Firing")
 	float LaunchSpeed = 2000;        // 1000 m/s default - find sensible value
