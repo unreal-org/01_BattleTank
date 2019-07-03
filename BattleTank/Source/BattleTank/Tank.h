@@ -25,7 +25,7 @@ private:
 	ATank();
 
 	// Called every frame
-	virtual void Tick(float DeltaTime) override;
+	// virtual void Tick(float DeltaTime) override; // not needed
 
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
@@ -38,5 +38,5 @@ public:
 	void SetBarrelReference(UTankBarrel* BarrelToSet);
 
 	UPROPERTY(EditAnywhere, Category = "Firing")
-	float LaunchSpeed = 100000;        // 1000 m/s default - find sensible value
+	float LaunchSpeed = 2000;        // 1000 m/s default - find sensible value
 };

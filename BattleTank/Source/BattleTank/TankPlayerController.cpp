@@ -42,6 +42,9 @@ void ATankPlayerController::AimTowardCrosshair()
         return;
     }
 
+    float Time = GetWorld()->GetTimeSeconds();
+    UE_LOG(LogTemp, Warning, TEXT("%f: AimTowardCrosshair called."), Time);
+
     FVector HitLocation; // OUT parameter
     if (GetSightRayHitLocation(HitLocation))
     {

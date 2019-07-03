@@ -14,7 +14,7 @@ UTankAimingComponent::UTankAimingComponent()
 {
 	// Set this component to be initialized when the game starts, and to be ticked every frame.  You can turn these features
 	// off to improve performance if you don't need them.
-	PrimaryComponentTick.bCanEverTick = true;
+	PrimaryComponentTick.bCanEverTick = true;    // should this tick?
 
 	// ...
 }
@@ -61,7 +61,7 @@ void UTankAimingComponent::AimAt(FVector HitLocation, float LaunchSpeed)
 			false,  // default
 			0,  // default
 			0,  // default
-			ESuggestProjVelocityTraceOption::DoNotTrace
+			ESuggestProjVelocityTraceOption::DoNotTrace  // must be present - presents bug "no solution found"
 		);
 
 	// calculate launch vector
@@ -72,6 +72,11 @@ void UTankAimingComponent::AimAt(FVector HitLocation, float LaunchSpeed)
 		MoveBarrelTowards(AimDirection);
 		UE_LOG(LogTemp, Warning, TEXT("%s aiming at %s."),*ThisTankName, *AimDirection.ToString());
 	}
+	else
+	{
+		UE_LOG(LogTemp, Warning, TEXT("No Aim Solution."));
+	}
+	
 }
 
 void UTankAimingComponent::MoveBarrelTowards(FVector AimDirection)
@@ -79,8 +84,8 @@ void UTankAimingComponent::MoveBarrelTowards(FVector AimDirection)
 	// work out difference between current barrel rotation and aimdirection
 	FRotator BarrelRotation = Barrel->GetForwardVector().Rotation();
 	FRotator AimAsRotator = AimDirection.Rotation();
-	FRotator DelatRotator = AimAsRotator - BarrelRotation;
+	FRotator DeltaRotator = AimAsRotator - BarrelRotation;
 	UE_LOG(LogTemp, Warning, TEXT("Aim Rotation is: %s."), *AimAsRotator.ToString());
 	
-	Barrel->Elevate(5);
+	Barrel->Elevate(DeltaRotator.Pitch);
 }
