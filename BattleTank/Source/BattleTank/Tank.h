@@ -9,6 +9,8 @@
 class UTankBarrel; // forward declaration
 class UTankAimingComponent;
 class UTankTurret;
+class AProjectile;
+
 
 UCLASS()
 class BATTLETANK_API ATank : public APawn
@@ -20,6 +22,7 @@ protected:
 	virtual void BeginPlay() override;
 
 	UTankAimingComponent* TankAimingComponent = nullptr;
+	
 
 private:	
 	// Sets default values for this pawn's properties
@@ -31,9 +34,20 @@ private:
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
+	UPROPERTY(EditAnywhere, Category = "Firing")
+	float LaunchSpeed = 2000;        // 1000 m/s default - find sensible value
+
+	UPROPERTY(EditAnywhere, Category = "Setup")
+	TSubclassOf<AProjectile> ProjectileBlueprint;      // https://docs.unrealengine.com/en-US/Programming/UnrealArchitecture/TSubclassOf/index.html
+
+	UTankBarrel* Barrel = nullptr;
+
 public:
 	void AimAt(FVector HitLocation);
 	//UTankAimingComponent* GetTankAimingComponent() { return TankAimingComponent; }
+	
+	UFUNCTION(BluePrintCallable)
+	void Fire();
 
 	UFUNCTION(BlueprintCallable, Category = "Setup")    // makes function callable from blueprint
 	void SetBarrelReference(UTankBarrel* BarrelToSet);
@@ -41,6 +55,5 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "Setup")    // makes function callable from blueprint
 	void SetTurretReference(UTankTurret* TurretToSet);
 
-	UPROPERTY(EditAnywhere, Category = "Firing")
-	float LaunchSpeed = 2000;        // 1000 m/s default - find sensible value
+	
 };

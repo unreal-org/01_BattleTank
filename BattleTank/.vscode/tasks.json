@@ -9,7 +9,7 @@
 				"BattleTank",
 				"Win32",
 				"Debug",
-				"C:\\Users\\KC\\Desktop\\01_BattleTank\\BattleTank\\BattleTank.uproject",
+				"C:\\Users\\KC\\Documents\\Unreal Projects\\Repository\\01_BattleTank\\BattleTank\\BattleTank.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -26,7 +26,7 @@
 				"BattleTank",
 				"Win32",
 				"Debug",
-				"C:\\Users\\KC\\Desktop\\01_BattleTank\\BattleTank\\BattleTank.uproject",
+				"C:\\Users\\KC\\Documents\\Unreal Projects\\Repository\\01_BattleTank\\BattleTank\\BattleTank.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -46,7 +46,7 @@
 				"BattleTank",
 				"Win32",
 				"Debug",
-				"C:\\Users\\KC\\Desktop\\01_BattleTank\\BattleTank\\BattleTank.uproject",
+				"C:\\Users\\KC\\Documents\\Unreal Projects\\Repository\\01_BattleTank\\BattleTank\\BattleTank.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -63,7 +63,7 @@
 				"BattleTank",
 				"Win32",
 				"DebugGame",
-				"C:\\Users\\KC\\Desktop\\01_BattleTank\\BattleTank\\BattleTank.uproject",
+				"C:\\Users\\KC\\Documents\\Unreal Projects\\Repository\\01_BattleTank\\BattleTank\\BattleTank.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -80,7 +80,7 @@
 				"BattleTank",
 				"Win32",
 				"DebugGame",
-				"C:\\Users\\KC\\Desktop\\01_BattleTank\\BattleTank\\BattleTank.uproject",
+				"C:\\Users\\KC\\Documents\\Unreal Projects\\Repository\\01_BattleTank\\BattleTank\\BattleTank.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -100,7 +100,7 @@
 				"BattleTank",
 				"Win32",
 				"DebugGame",
-				"C:\\Users\\KC\\Desktop\\01_BattleTank\\BattleTank\\BattleTank.uproject",
+				"C:\\Users\\KC\\Documents\\Unreal Projects\\Repository\\01_BattleTank\\BattleTank\\BattleTank.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -117,7 +117,7 @@
 				"BattleTank",
 				"Win32",
 				"Development",
-				"C:\\Users\\KC\\Desktop\\01_BattleTank\\BattleTank\\BattleTank.uproject",
+				"C:\\Users\\KC\\Documents\\Unreal Projects\\Repository\\01_BattleTank\\BattleTank\\BattleTank.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -134,7 +134,7 @@
 				"BattleTank",
 				"Win32",
 				"Development",
-				"C:\\Users\\KC\\Desktop\\01_BattleTank\\BattleTank\\BattleTank.uproject",
+				"C:\\Users\\KC\\Documents\\Unreal Projects\\Repository\\01_BattleTank\\BattleTank\\BattleTank.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -154,7 +154,7 @@
 				"BattleTank",
 				"Win32",
 				"Development",
-				"C:\\Users\\KC\\Desktop\\01_BattleTank\\BattleTank\\BattleTank.uproject",
+				"C:\\Users\\KC\\Documents\\Unreal Projects\\Repository\\01_BattleTank\\BattleTank\\BattleTank.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -171,7 +171,7 @@
 				"BattleTank",
 				"Win32",
 				"Shipping",
-				"C:\\Users\\KC\\Desktop\\01_BattleTank\\BattleTank\\BattleTank.uproject",
+				"C:\\Users\\KC\\Documents\\Unreal Projects\\Repository\\01_BattleTank\\BattleTank\\BattleTank.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -188,7 +188,7 @@
 				"BattleTank",
 				"Win32",
 				"Shipping",
-				"C:\\Users\\KC\\Desktop\\01_BattleTank\\BattleTank\\BattleTank.uproject",
+				"C:\\Users\\KC\\Documents\\Unreal Projects\\Repository\\01_BattleTank\\BattleTank\\BattleTank.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -208,7 +208,7 @@
 				"BattleTank",
 				"Win32",
 				"Shipping",
-				"C:\\Users\\KC\\Desktop\\01_BattleTank\\BattleTank\\BattleTank.uproject",
+				"C:\\Users\\KC\\Documents\\Unreal Projects\\Repository\\01_BattleTank\\BattleTank\\BattleTank.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -225,7 +225,7 @@
 				"BattleTank",
 				"Win32",
 				"Test",
-				"C:\\Users\\KC\\Desktop\\01_BattleTank\\BattleTank\\BattleTank.uproject",
+				"C:\\Users\\KC\\Documents\\Unreal Projects\\Repository\\01_BattleTank\\BattleTank\\BattleTank.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -242,7 +242,7 @@
 				"BattleTank",
 				"Win32",
 				"Test",
-				"C:\\Users\\KC\\Desktop\\01_BattleTank\\BattleTank\\BattleTank.uproject",
+				"C:\\Users\\KC\\Documents\\Unreal Projects\\Repository\\01_BattleTank\\BattleTank\\BattleTank.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -262,7 +262,7 @@
 				"BattleTank",
 				"Win32",
 				"Test",
-				"C:\\Users\\KC\\Desktop\\01_BattleTank\\BattleTank\\BattleTank.uproject",
+				"C:\\Users\\KC\\Documents\\Unreal Projects\\Repository\\01_BattleTank\\BattleTank\\BattleTank.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -279,7 +279,7 @@
 				"BattleTank",
 				"Win64",
 				"Debug",
-				"C:\\Users\\KC\\Desktop\\01_BattleTank\\BattleTank\\BattleTank.uproject",
+				"C:\\Users\\KC\\Documents\\Unreal Projects\\Repository\\01_BattleTank\\BattleTank\\BattleTank.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -296,7 +296,7 @@
 				"BattleTank",
 				"Win64",
 				"Debug",
-				"C:\\Users\\KC\\Desktop\\01_BattleTank\\BattleTank\\BattleTank.uproject",
+				"C:\\Users\\KC\\Documents\\Unreal Projects\\Repository\\01_BattleTank\\BattleTank\\BattleTank.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -316,7 +316,7 @@
 				"BattleTank",
 				"Win64",
 				"Debug",
-				"C:\\Users\\KC\\Desktop\\01_BattleTank\\BattleTank\\BattleTank.uproject",
+				"C:\\Users\\KC\\Documents\\Unreal Projects\\Repository\\01_BattleTank\\BattleTank\\BattleTank.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -333,7 +333,7 @@
 				"BattleTank",
 				"Win64",
 				"DebugGame",
-				"C:\\Users\\KC\\Desktop\\01_BattleTank\\BattleTank\\BattleTank.uproject",
+				"C:\\Users\\KC\\Documents\\Unreal Projects\\Repository\\01_BattleTank\\BattleTank\\BattleTank.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -350,7 +350,7 @@
 				"BattleTank",
 				"Win64",
 				"DebugGame",
-				"C:\\Users\\KC\\Desktop\\01_BattleTank\\BattleTank\\BattleTank.uproject",
+				"C:\\Users\\KC\\Documents\\Unreal Projects\\Repository\\01_BattleTank\\BattleTank\\BattleTank.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -370,7 +370,7 @@
 				"BattleTank",
 				"Win64",
 				"DebugGame",
-				"C:\\Users\\KC\\Desktop\\01_BattleTank\\BattleTank\\BattleTank.uproject",
+				"C:\\Users\\KC\\Documents\\Unreal Projects\\Repository\\01_BattleTank\\BattleTank\\BattleTank.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -387,7 +387,7 @@
 				"BattleTank",
 				"Win64",
 				"Development",
-				"C:\\Users\\KC\\Desktop\\01_BattleTank\\BattleTank\\BattleTank.uproject",
+				"C:\\Users\\KC\\Documents\\Unreal Projects\\Repository\\01_BattleTank\\BattleTank\\BattleTank.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -404,7 +404,7 @@
 				"BattleTank",
 				"Win64",
 				"Development",
-				"C:\\Users\\KC\\Desktop\\01_BattleTank\\BattleTank\\BattleTank.uproject",
+				"C:\\Users\\KC\\Documents\\Unreal Projects\\Repository\\01_BattleTank\\BattleTank\\BattleTank.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -424,7 +424,7 @@
 				"BattleTank",
 				"Win64",
 				"Development",
-				"C:\\Users\\KC\\Desktop\\01_BattleTank\\BattleTank\\BattleTank.uproject",
+				"C:\\Users\\KC\\Documents\\Unreal Projects\\Repository\\01_BattleTank\\BattleTank\\BattleTank.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -441,7 +441,7 @@
 				"BattleTank",
 				"Win64",
 				"Shipping",
-				"C:\\Users\\KC\\Desktop\\01_BattleTank\\BattleTank\\BattleTank.uproject",
+				"C:\\Users\\KC\\Documents\\Unreal Projects\\Repository\\01_BattleTank\\BattleTank\\BattleTank.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -458,7 +458,7 @@
 				"BattleTank",
 				"Win64",
 				"Shipping",
-				"C:\\Users\\KC\\Desktop\\01_BattleTank\\BattleTank\\BattleTank.uproject",
+				"C:\\Users\\KC\\Documents\\Unreal Projects\\Repository\\01_BattleTank\\BattleTank\\BattleTank.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -478,7 +478,7 @@
 				"BattleTank",
 				"Win64",
 				"Shipping",
-				"C:\\Users\\KC\\Desktop\\01_BattleTank\\BattleTank\\BattleTank.uproject",
+				"C:\\Users\\KC\\Documents\\Unreal Projects\\Repository\\01_BattleTank\\BattleTank\\BattleTank.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -495,7 +495,7 @@
 				"BattleTank",
 				"Win64",
 				"Test",
-				"C:\\Users\\KC\\Desktop\\01_BattleTank\\BattleTank\\BattleTank.uproject",
+				"C:\\Users\\KC\\Documents\\Unreal Projects\\Repository\\01_BattleTank\\BattleTank\\BattleTank.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -512,7 +512,7 @@
 				"BattleTank",
 				"Win64",
 				"Test",
-				"C:\\Users\\KC\\Desktop\\01_BattleTank\\BattleTank\\BattleTank.uproject",
+				"C:\\Users\\KC\\Documents\\Unreal Projects\\Repository\\01_BattleTank\\BattleTank\\BattleTank.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -532,7 +532,7 @@
 				"BattleTank",
 				"Win64",
 				"Test",
-				"C:\\Users\\KC\\Desktop\\01_BattleTank\\BattleTank\\BattleTank.uproject",
+				"C:\\Users\\KC\\Documents\\Unreal Projects\\Repository\\01_BattleTank\\BattleTank\\BattleTank.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -549,7 +549,7 @@
 				"BattleTank",
 				"IOS",
 				"Debug",
-				"C:\\Users\\KC\\Desktop\\01_BattleTank\\BattleTank\\BattleTank.uproject",
+				"C:\\Users\\KC\\Documents\\Unreal Projects\\Repository\\01_BattleTank\\BattleTank\\BattleTank.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -566,7 +566,7 @@
 				"BattleTank",
 				"IOS",
 				"Debug",
-				"C:\\Users\\KC\\Desktop\\01_BattleTank\\BattleTank\\BattleTank.uproject",
+				"C:\\Users\\KC\\Documents\\Unreal Projects\\Repository\\01_BattleTank\\BattleTank\\BattleTank.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -586,7 +586,7 @@
 				"BattleTank",
 				"IOS",
 				"Debug",
-				"C:\\Users\\KC\\Desktop\\01_BattleTank\\BattleTank\\BattleTank.uproject",
+				"C:\\Users\\KC\\Documents\\Unreal Projects\\Repository\\01_BattleTank\\BattleTank\\BattleTank.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -603,7 +603,7 @@
 				"BattleTank",
 				"IOS",
 				"DebugGame",
-				"C:\\Users\\KC\\Desktop\\01_BattleTank\\BattleTank\\BattleTank.uproject",
+				"C:\\Users\\KC\\Documents\\Unreal Projects\\Repository\\01_BattleTank\\BattleTank\\BattleTank.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -620,7 +620,7 @@
 				"BattleTank",
 				"IOS",
 				"DebugGame",
-				"C:\\Users\\KC\\Desktop\\01_BattleTank\\BattleTank\\BattleTank.uproject",
+				"C:\\Users\\KC\\Documents\\Unreal Projects\\Repository\\01_BattleTank\\BattleTank\\BattleTank.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -640,7 +640,7 @@
 				"BattleTank",
 				"IOS",
 				"DebugGame",
-				"C:\\Users\\KC\\Desktop\\01_BattleTank\\BattleTank\\BattleTank.uproject",
+				"C:\\Users\\KC\\Documents\\Unreal Projects\\Repository\\01_BattleTank\\BattleTank\\BattleTank.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -657,7 +657,7 @@
 				"BattleTank",
 				"IOS",
 				"Development",
-				"C:\\Users\\KC\\Desktop\\01_BattleTank\\BattleTank\\BattleTank.uproject",
+				"C:\\Users\\KC\\Documents\\Unreal Projects\\Repository\\01_BattleTank\\BattleTank\\BattleTank.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -674,7 +674,7 @@
 				"BattleTank",
 				"IOS",
 				"Development",
-				"C:\\Users\\KC\\Desktop\\01_BattleTank\\BattleTank\\BattleTank.uproject",
+				"C:\\Users\\KC\\Documents\\Unreal Projects\\Repository\\01_BattleTank\\BattleTank\\BattleTank.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -694,7 +694,7 @@
 				"BattleTank",
 				"IOS",
 				"Development",
-				"C:\\Users\\KC\\Desktop\\01_BattleTank\\BattleTank\\BattleTank.uproject",
+				"C:\\Users\\KC\\Documents\\Unreal Projects\\Repository\\01_BattleTank\\BattleTank\\BattleTank.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -711,7 +711,7 @@
 				"BattleTank",
 				"IOS",
 				"Shipping",
-				"C:\\Users\\KC\\Desktop\\01_BattleTank\\BattleTank\\BattleTank.uproject",
+				"C:\\Users\\KC\\Documents\\Unreal Projects\\Repository\\01_BattleTank\\BattleTank\\BattleTank.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -728,7 +728,7 @@
 				"BattleTank",
 				"IOS",
 				"Shipping",
-				"C:\\Users\\KC\\Desktop\\01_BattleTank\\BattleTank\\BattleTank.uproject",
+				"C:\\Users\\KC\\Documents\\Unreal Projects\\Repository\\01_BattleTank\\BattleTank\\BattleTank.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -748,7 +748,7 @@
 				"BattleTank",
 				"IOS",
 				"Shipping",
-				"C:\\Users\\KC\\Desktop\\01_BattleTank\\BattleTank\\BattleTank.uproject",
+				"C:\\Users\\KC\\Documents\\Unreal Projects\\Repository\\01_BattleTank\\BattleTank\\BattleTank.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -765,7 +765,7 @@
 				"BattleTank",
 				"IOS",
 				"Test",
-				"C:\\Users\\KC\\Desktop\\01_BattleTank\\BattleTank\\BattleTank.uproject",
+				"C:\\Users\\KC\\Documents\\Unreal Projects\\Repository\\01_BattleTank\\BattleTank\\BattleTank.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -782,7 +782,7 @@
 				"BattleTank",
 				"IOS",
 				"Test",
-				"C:\\Users\\KC\\Desktop\\01_BattleTank\\BattleTank\\BattleTank.uproject",
+				"C:\\Users\\KC\\Documents\\Unreal Projects\\Repository\\01_BattleTank\\BattleTank\\BattleTank.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -802,7 +802,7 @@
 				"BattleTank",
 				"IOS",
 				"Test",
-				"C:\\Users\\KC\\Desktop\\01_BattleTank\\BattleTank\\BattleTank.uproject",
+				"C:\\Users\\KC\\Documents\\Unreal Projects\\Repository\\01_BattleTank\\BattleTank\\BattleTank.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -819,7 +819,7 @@
 				"BattleTank",
 				"Android",
 				"Debug",
-				"C:\\Users\\KC\\Desktop\\01_BattleTank\\BattleTank\\BattleTank.uproject",
+				"C:\\Users\\KC\\Documents\\Unreal Projects\\Repository\\01_BattleTank\\BattleTank\\BattleTank.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -836,7 +836,7 @@
 				"BattleTank",
 				"Android",
 				"Debug",
-				"C:\\Users\\KC\\Desktop\\01_BattleTank\\BattleTank\\BattleTank.uproject",
+				"C:\\Users\\KC\\Documents\\Unreal Projects\\Repository\\01_BattleTank\\BattleTank\\BattleTank.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -856,7 +856,7 @@
 				"BattleTank",
 				"Android",
 				"Debug",
-				"C:\\Users\\KC\\Desktop\\01_BattleTank\\BattleTank\\BattleTank.uproject",
+				"C:\\Users\\KC\\Documents\\Unreal Projects\\Repository\\01_BattleTank\\BattleTank\\BattleTank.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -873,7 +873,7 @@
 				"BattleTank",
 				"Android",
 				"DebugGame",
-				"C:\\Users\\KC\\Desktop\\01_BattleTank\\BattleTank\\BattleTank.uproject",
+				"C:\\Users\\KC\\Documents\\Unreal Projects\\Repository\\01_BattleTank\\BattleTank\\BattleTank.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -890,7 +890,7 @@
 				"BattleTank",
 				"Android",
 				"DebugGame",
-				"C:\\Users\\KC\\Desktop\\01_BattleTank\\BattleTank\\BattleTank.uproject",
+				"C:\\Users\\KC\\Documents\\Unreal Projects\\Repository\\01_BattleTank\\BattleTank\\BattleTank.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -910,7 +910,7 @@
 				"BattleTank",
 				"Android",
 				"DebugGame",
-				"C:\\Users\\KC\\Desktop\\01_BattleTank\\BattleTank\\BattleTank.uproject",
+				"C:\\Users\\KC\\Documents\\Unreal Projects\\Repository\\01_BattleTank\\BattleTank\\BattleTank.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -927,7 +927,7 @@
 				"BattleTank",
 				"Android",
 				"Development",
-				"C:\\Users\\KC\\Desktop\\01_BattleTank\\BattleTank\\BattleTank.uproject",
+				"C:\\Users\\KC\\Documents\\Unreal Projects\\Repository\\01_BattleTank\\BattleTank\\BattleTank.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -944,7 +944,7 @@
 				"BattleTank",
 				"Android",
 				"Development",
-				"C:\\Users\\KC\\Desktop\\01_BattleTank\\BattleTank\\BattleTank.uproject",
+				"C:\\Users\\KC\\Documents\\Unreal Projects\\Repository\\01_BattleTank\\BattleTank\\BattleTank.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -964,7 +964,7 @@
 				"BattleTank",
 				"Android",
 				"Development",
-				"C:\\Users\\KC\\Desktop\\01_BattleTank\\BattleTank\\BattleTank.uproject",
+				"C:\\Users\\KC\\Documents\\Unreal Projects\\Repository\\01_BattleTank\\BattleTank\\BattleTank.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -981,7 +981,7 @@
 				"BattleTank",
 				"Android",
 				"Shipping",
-				"C:\\Users\\KC\\Desktop\\01_BattleTank\\BattleTank\\BattleTank.uproject",
+				"C:\\Users\\KC\\Documents\\Unreal Projects\\Repository\\01_BattleTank\\BattleTank\\BattleTank.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -998,7 +998,7 @@
 				"BattleTank",
 				"Android",
 				"Shipping",
-				"C:\\Users\\KC\\Desktop\\01_BattleTank\\BattleTank\\BattleTank.uproject",
+				"C:\\Users\\KC\\Documents\\Unreal Projects\\Repository\\01_BattleTank\\BattleTank\\BattleTank.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -1018,7 +1018,7 @@
 				"BattleTank",
 				"Android",
 				"Shipping",
-				"C:\\Users\\KC\\Desktop\\01_BattleTank\\BattleTank\\BattleTank.uproject",
+				"C:\\Users\\KC\\Documents\\Unreal Projects\\Repository\\01_BattleTank\\BattleTank\\BattleTank.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -1035,7 +1035,7 @@
 				"BattleTank",
 				"Android",
 				"Test",
-				"C:\\Users\\KC\\Desktop\\01_BattleTank\\BattleTank\\BattleTank.uproject",
+				"C:\\Users\\KC\\Documents\\Unreal Projects\\Repository\\01_BattleTank\\BattleTank\\BattleTank.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -1052,7 +1052,7 @@
 				"BattleTank",
 				"Android",
 				"Test",
-				"C:\\Users\\KC\\Desktop\\01_BattleTank\\BattleTank\\BattleTank.uproject",
+				"C:\\Users\\KC\\Documents\\Unreal Projects\\Repository\\01_BattleTank\\BattleTank\\BattleTank.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -1072,7 +1072,7 @@
 				"BattleTank",
 				"Android",
 				"Test",
-				"C:\\Users\\KC\\Desktop\\01_BattleTank\\BattleTank\\BattleTank.uproject",
+				"C:\\Users\\KC\\Documents\\Unreal Projects\\Repository\\01_BattleTank\\BattleTank\\BattleTank.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -1089,7 +1089,7 @@
 				"BattleTank",
 				"HTML5",
 				"Debug",
-				"C:\\Users\\KC\\Desktop\\01_BattleTank\\BattleTank\\BattleTank.uproject",
+				"C:\\Users\\KC\\Documents\\Unreal Projects\\Repository\\01_BattleTank\\BattleTank\\BattleTank.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -1106,7 +1106,7 @@
 				"BattleTank",
 				"HTML5",
 				"Debug",
-				"C:\\Users\\KC\\Desktop\\01_BattleTank\\BattleTank\\BattleTank.uproject",
+				"C:\\Users\\KC\\Documents\\Unreal Projects\\Repository\\01_BattleTank\\BattleTank\\BattleTank.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -1126,7 +1126,7 @@
 				"BattleTank",
 				"HTML5",
 				"Debug",
-				"C:\\Users\\KC\\Desktop\\01_BattleTank\\BattleTank\\BattleTank.uproject",
+				"C:\\Users\\KC\\Documents\\Unreal Projects\\Repository\\01_BattleTank\\BattleTank\\BattleTank.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -1143,7 +1143,7 @@
 				"BattleTank",
 				"HTML5",
 				"DebugGame",
-				"C:\\Users\\KC\\Desktop\\01_BattleTank\\BattleTank\\BattleTank.uproject",
+				"C:\\Users\\KC\\Documents\\Unreal Projects\\Repository\\01_BattleTank\\BattleTank\\BattleTank.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -1160,7 +1160,7 @@
 				"BattleTank",
 				"HTML5",
 				"DebugGame",
-				"C:\\Users\\KC\\Desktop\\01_BattleTank\\BattleTank\\BattleTank.uproject",
+				"C:\\Users\\KC\\Documents\\Unreal Projects\\Repository\\01_BattleTank\\BattleTank\\BattleTank.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -1180,7 +1180,7 @@
 				"BattleTank",
 				"HTML5",
 				"DebugGame",
-				"C:\\Users\\KC\\Desktop\\01_BattleTank\\BattleTank\\BattleTank.uproject",
+				"C:\\Users\\KC\\Documents\\Unreal Projects\\Repository\\01_BattleTank\\BattleTank\\BattleTank.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -1197,7 +1197,7 @@
 				"BattleTank",
 				"HTML5",
 				"Development",
-				"C:\\Users\\KC\\Desktop\\01_BattleTank\\BattleTank\\BattleTank.uproject",
+				"C:\\Users\\KC\\Documents\\Unreal Projects\\Repository\\01_BattleTank\\BattleTank\\BattleTank.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -1214,7 +1214,7 @@
 				"BattleTank",
 				"HTML5",
 				"Development",
-				"C:\\Users\\KC\\Desktop\\01_BattleTank\\BattleTank\\BattleTank.uproject",
+				"C:\\Users\\KC\\Documents\\Unreal Projects\\Repository\\01_BattleTank\\BattleTank\\BattleTank.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -1234,7 +1234,7 @@
 				"BattleTank",
 				"HTML5",
 				"Development",
-				"C:\\Users\\KC\\Desktop\\01_BattleTank\\BattleTank\\BattleTank.uproject",
+				"C:\\Users\\KC\\Documents\\Unreal Projects\\Repository\\01_BattleTank\\BattleTank\\BattleTank.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -1251,7 +1251,7 @@
 				"BattleTank",
 				"HTML5",
 				"Shipping",
-				"C:\\Users\\KC\\Desktop\\01_BattleTank\\BattleTank\\BattleTank.uproject",
+				"C:\\Users\\KC\\Documents\\Unreal Projects\\Repository\\01_BattleTank\\BattleTank\\BattleTank.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -1268,7 +1268,7 @@
 				"BattleTank",
 				"HTML5",
 				"Shipping",
-				"C:\\Users\\KC\\Desktop\\01_BattleTank\\BattleTank\\BattleTank.uproject",
+				"C:\\Users\\KC\\Documents\\Unreal Projects\\Repository\\01_BattleTank\\BattleTank\\BattleTank.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -1288,7 +1288,7 @@
 				"BattleTank",
 				"HTML5",
 				"Shipping",
-				"C:\\Users\\KC\\Desktop\\01_BattleTank\\BattleTank\\BattleTank.uproject",
+				"C:\\Users\\KC\\Documents\\Unreal Projects\\Repository\\01_BattleTank\\BattleTank\\BattleTank.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -1305,7 +1305,7 @@
 				"BattleTank",
 				"HTML5",
 				"Test",
-				"C:\\Users\\KC\\Desktop\\01_BattleTank\\BattleTank\\BattleTank.uproject",
+				"C:\\Users\\KC\\Documents\\Unreal Projects\\Repository\\01_BattleTank\\BattleTank\\BattleTank.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -1322,7 +1322,7 @@
 				"BattleTank",
 				"HTML5",
 				"Test",
-				"C:\\Users\\KC\\Desktop\\01_BattleTank\\BattleTank\\BattleTank.uproject",
+				"C:\\Users\\KC\\Documents\\Unreal Projects\\Repository\\01_BattleTank\\BattleTank\\BattleTank.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -1342,7 +1342,7 @@
 				"BattleTank",
 				"HTML5",
 				"Test",
-				"C:\\Users\\KC\\Desktop\\01_BattleTank\\BattleTank\\BattleTank.uproject",
+				"C:\\Users\\KC\\Documents\\Unreal Projects\\Repository\\01_BattleTank\\BattleTank\\BattleTank.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -1359,7 +1359,7 @@
 				"BattleTankEditor",
 				"Win64",
 				"Debug",
-				"C:\\Users\\KC\\Desktop\\01_BattleTank\\BattleTank\\BattleTank.uproject",
+				"C:\\Users\\KC\\Documents\\Unreal Projects\\Repository\\01_BattleTank\\BattleTank\\BattleTank.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -1376,7 +1376,7 @@
 				"BattleTankEditor",
 				"Win64",
 				"Debug",
-				"C:\\Users\\KC\\Desktop\\01_BattleTank\\BattleTank\\BattleTank.uproject",
+				"C:\\Users\\KC\\Documents\\Unreal Projects\\Repository\\01_BattleTank\\BattleTank\\BattleTank.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -1396,7 +1396,7 @@
 				"BattleTankEditor",
 				"Win64",
 				"Debug",
-				"C:\\Users\\KC\\Desktop\\01_BattleTank\\BattleTank\\BattleTank.uproject",
+				"C:\\Users\\KC\\Documents\\Unreal Projects\\Repository\\01_BattleTank\\BattleTank\\BattleTank.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -1413,7 +1413,7 @@
 				"BattleTankEditor",
 				"Win64",
 				"DebugGame",
-				"C:\\Users\\KC\\Desktop\\01_BattleTank\\BattleTank\\BattleTank.uproject",
+				"C:\\Users\\KC\\Documents\\Unreal Projects\\Repository\\01_BattleTank\\BattleTank\\BattleTank.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -1430,7 +1430,7 @@
 				"BattleTankEditor",
 				"Win64",
 				"DebugGame",
-				"C:\\Users\\KC\\Desktop\\01_BattleTank\\BattleTank\\BattleTank.uproject",
+				"C:\\Users\\KC\\Documents\\Unreal Projects\\Repository\\01_BattleTank\\BattleTank\\BattleTank.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -1450,7 +1450,7 @@
 				"BattleTankEditor",
 				"Win64",
 				"DebugGame",
-				"C:\\Users\\KC\\Desktop\\01_BattleTank\\BattleTank\\BattleTank.uproject",
+				"C:\\Users\\KC\\Documents\\Unreal Projects\\Repository\\01_BattleTank\\BattleTank\\BattleTank.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -1467,7 +1467,7 @@
 				"BattleTankEditor",
 				"Win64",
 				"Development",
-				"C:\\Users\\KC\\Desktop\\01_BattleTank\\BattleTank\\BattleTank.uproject",
+				"C:\\Users\\KC\\Documents\\Unreal Projects\\Repository\\01_BattleTank\\BattleTank\\BattleTank.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -1484,7 +1484,7 @@
 				"BattleTankEditor",
 				"Win64",
 				"Development",
-				"C:\\Users\\KC\\Desktop\\01_BattleTank\\BattleTank\\BattleTank.uproject",
+				"C:\\Users\\KC\\Documents\\Unreal Projects\\Repository\\01_BattleTank\\BattleTank\\BattleTank.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -1504,7 +1504,7 @@
 				"BattleTankEditor",
 				"Win64",
 				"Development",
-				"C:\\Users\\KC\\Desktop\\01_BattleTank\\BattleTank\\BattleTank.uproject",
+				"C:\\Users\\KC\\Documents\\Unreal Projects\\Repository\\01_BattleTank\\BattleTank\\BattleTank.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
