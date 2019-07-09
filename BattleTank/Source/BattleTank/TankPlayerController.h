@@ -24,13 +24,13 @@ private:
 	ATank* GetControlledTank() const;
 	void AimTowardCrosshair();    // moves tank barrel to crosshair
 		
-	UPROPERTY(EditAnywhere)
+	UPROPERTY(EditDefaultsOnly)
 	float CrosshairXLocation = 0.5f;
 
-	UPROPERTY(EditAnywhere)
+	UPROPERTY(EditDefaultsOnly)
 	float CrosshairYLocation = 0.3333f;
 
-	UPROPERTY(EditAnywhere)
+	UPROPERTY(EditDefaultsOnly)
 	float LineTraceRange = 10000;
 
 	bool GetSightRayHitLocation(FVector& HitLocation) const;

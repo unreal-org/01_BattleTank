@@ -34,10 +34,10 @@ private:
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
-	UPROPERTY(EditAnywhere, Category = "Firing")
+	UPROPERTY(EditDefaultsOnly, Category = "Firing")
 	float LaunchSpeed = 2000;        // 1000 m/s default - find sensible value
 
-	UPROPERTY(EditAnywhere, Category = "Setup")
+	UPROPERTY(EditDefaultsOnly, Category = "Setup")
 	TSubclassOf<AProjectile> ProjectileBlueprint;      // https://docs.unrealengine.com/en-US/Programming/UnrealArchitecture/TSubclassOf/index.html
 
 	UTankBarrel* Barrel = nullptr;
@@ -55,5 +55,8 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "Setup")    // makes function callable from blueprint
 	void SetTurretReference(UTankTurret* TurretToSet);
 
-	
+	UPROPERTY(EditDefaultsOnly, Category = "Firing")
+	float ReloadTimeInSeconds = 3;
+
+	float LastFireTime = 0;     // use high precision timer for things like this
 };
