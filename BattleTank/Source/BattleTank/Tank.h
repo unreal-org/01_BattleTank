@@ -10,7 +10,7 @@ class UTankBarrel; // forward declaration
 class UTankAimingComponent;
 class UTankTurret;
 class AProjectile;
-
+class UTankMovementComponent;
 
 UCLASS()
 class BATTLETANK_API ATank : public APawn
@@ -22,7 +22,9 @@ protected:
 	virtual void BeginPlay() override;
 
 	UTankAimingComponent* TankAimingComponent = nullptr;
-	
+
+	UPROPERTY(BlueprintReadOnly)
+	UTankMovementComponent* TankMovementComponent = nullptr;
 
 private:	
 	// Sets default values for this pawn's properties
@@ -35,7 +37,7 @@ private:
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
 	UPROPERTY(EditDefaultsOnly, Category = "Firing")
-	float LaunchSpeed = 2000;        // 1000 m/s default - find sensible value
+	float LaunchSpeed = 1500;        // 1000 m/s default - find sensible value
 
 	UPROPERTY(EditDefaultsOnly, Category = "Setup")
 	TSubclassOf<AProjectile> ProjectileBlueprint;      // https://docs.unrealengine.com/en-US/Programming/UnrealArchitecture/TSubclassOf/index.html
