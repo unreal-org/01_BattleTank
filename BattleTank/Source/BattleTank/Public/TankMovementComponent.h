@@ -11,13 +11,13 @@ class UTankTrack;
 /**
  * 
  */
-UCLASS( ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
+UCLASS( ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )   // to add tank movement in blueprint
 class BATTLETANK_API UTankMovementComponent : public UNavMovementComponent
 {
 	GENERATED_BODY()
 
 public:
-	UFUNCTION(BluePrintCallable, Category = "Setup")
+	UFUNCTION(BluePrintCallable, Category = "Setup")      // initialize in input setup
 	void Initialize(UTankTrack* LeftTrackToSet, UTankTrack* RightTrackToSet);
 
 	UFUNCTION(BluePrintCallable, Category = "Input")
@@ -26,9 +26,12 @@ public:
 	UFUNCTION(BluePrintCallable, Category = "Input")
 	void IntendTurnRight(float Throw);
 	
-
+	
 private:
 	UTankTrack* LeftTrack = nullptr;
 	UTankTrack* RightTrack = nullptr;
+	
+	// check best protection
+	virtual void RequestDirectMove(const FVector & MoveVelocity, bool bForceMaxSpeed) override;
 
 };
