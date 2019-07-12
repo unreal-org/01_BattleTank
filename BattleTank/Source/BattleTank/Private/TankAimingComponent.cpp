@@ -20,24 +20,31 @@ UTankAimingComponent::UTankAimingComponent()
 	// ...
 }
 
-void UTankAimingComponent::SetBarrelReference(UTankBarrel* BarrelToSet)
+void UTankAimingComponent::Initialize(UTankBarrel* BarrelToSet, UTankTurret* TurretToSet)
 {
 	Barrel = BarrelToSet;
-}
-
-void UTankAimingComponent::SetTurretReference(UTankTurret* TurretToSet)
-{
 	Turret = TurretToSet;
 }
+	
+
+// void UTankAimingComponent::SetBarrelReference(UTankBarrel* BarrelToSet)
+// {
+// 	Barrel = BarrelToSet;
+// }
+
+// void UTankAimingComponent::SetTurretReference(UTankTurret* TurretToSet)
+// {
+// 	Barrel = BarrelToSet;
+// }
 
 // Called when the game starts
-void UTankAimingComponent::BeginPlay()
-{
-	Super::BeginPlay();
+// void UTankAimingComponent::BeginPlay()
+// {
+// 	Super::BeginPlay();
 
-	// ...
+// 	// ...
 	
-}
+// }
 
 
 // Called every frame
@@ -46,6 +53,11 @@ void UTankAimingComponent::TickComponent(float DeltaTime, ELevelTick TickType, F
 	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
 
 	// ...
+}
+
+UTankBarrel* UTankAimingComponent::GetBarrel()
+{
+	return Barrel;
 }
 
 void UTankAimingComponent::AimAt(FVector HitLocation, float LaunchSpeed)
@@ -87,6 +99,8 @@ void UTankAimingComponent::AimAt(FVector HitLocation, float LaunchSpeed)
 
 void UTankAimingComponent::MoveBarrelTowards(FVector AimDirection)
 {
+	if (!Barrel || !Turret) { return; }
+
 	// work out difference between current barrel rotation and aimdirection
 	FRotator BarrelRotation = Barrel->GetForwardVector().Rotation();
 	FRotator TurretRotation = Turret->GetForwardVector().Rotation();

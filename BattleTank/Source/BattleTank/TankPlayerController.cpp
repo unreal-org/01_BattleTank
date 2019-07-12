@@ -5,7 +5,8 @@
 #include "Camera/PlayerCameraManager.h"
 #include "Engine/EngineTypes.h"
 //#include "Public/CollisionQueryParams.h"
-
+#include "GameFramework/Actor.h"
+#include "TankAimingComponent.h"
 
 void ATankPlayerController::BeginPlay()
 {
@@ -20,6 +21,12 @@ void ATankPlayerController::BeginPlay()
     //     UE_LOG(LogTemp, Warning, TEXT("PlayerController possessing %s."), *ControlledTank->GetName());
     // }
     // UE_LOG(LogTemp, Warning, TEXT("PlayerController Begin Play."));
+
+    UTankAimingComponent* AimingComponent = GetControlledTank()->FindComponentByClass<UTankAimingComponent>();
+    if (AimingComponent)
+    {
+        FoundAimingComponent(AimingComponent);
+    }
 }
 
 // Called every frame

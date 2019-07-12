@@ -21,6 +21,7 @@ protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
+	UPROPERTY(BlueprintReadOnly)
 	UTankAimingComponent* TankAimingComponent = nullptr;
 
 	UPROPERTY(BlueprintReadOnly)
@@ -34,7 +35,7 @@ private:
 	// virtual void Tick(float DeltaTime) override; // not needed
 
 	// Called to bind functionality to input
-	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
+	// virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
 	UPROPERTY(EditDefaultsOnly, Category = "Firing")
 	float LaunchSpeed = 1500;        // 1000 m/s default - find sensible value
@@ -51,11 +52,11 @@ public:
 	UFUNCTION(BluePrintCallable)
 	void Fire();
 
-	UFUNCTION(BlueprintCallable, Category = "Setup")    // makes function callable from blueprint
-	void SetBarrelReference(UTankBarrel* BarrelToSet);
+	// UFUNCTION(BlueprintCallable, Category = "Setup")    // makes function callable from blueprint
+	// void SetBarrelReference(UTankBarrel* BarrelToSet);
 
-	UFUNCTION(BlueprintCallable, Category = "Setup")    // makes function callable from blueprint
-	void SetTurretReference(UTankTurret* TurretToSet);
+	// UFUNCTION(BlueprintCallable, Category = "Setup")    // makes function callable from blueprint
+	// void SetTurretReference(UTankTurret* TurretToSet);
 
 	UPROPERTY(EditDefaultsOnly, Category = "Firing")
 	float ReloadTimeInSeconds = 3;
