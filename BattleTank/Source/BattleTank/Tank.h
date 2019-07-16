@@ -6,11 +6,11 @@
 #include "GameFramework/Pawn.h"
 #include "Tank.generated.h"
 
-class UTankBarrel; // forward declaration
-class UTankAimingComponent;
-class UTankTurret;
-class AProjectile;
-class UTankMovementComponent;
+//class UTankBarrel; // forward declaration
+//class UTankAimingComponent;
+//class UTankTurret;
+//class AProjectile;
+//class UTankMovementComponent;
 
 UCLASS()
 class BATTLETANK_API ATank : public APawn
@@ -19,13 +19,13 @@ class BATTLETANK_API ATank : public APawn
 
 protected:
 	// Called when the game starts or when spawned
-	virtual void BeginPlay() override;
+	//virtual void BeginPlay() override;
 
-	UPROPERTY(BlueprintReadOnly)
-	UTankAimingComponent* TankAimingComponent = nullptr;
+	// UPROPERTY(BlueprintReadOnly)
+	// UTankAimingComponent* TankAimingComponent = nullptr;
 
-	UPROPERTY(BlueprintReadOnly)
-	UTankMovementComponent* TankMovementComponent = nullptr;
+	// UPROPERTY(BlueprintReadOnly)
+	// UTankMovementComponent* TankMovementComponent = nullptr;
 
 private:	
 	// Sets default values for this pawn's properties
@@ -37,20 +37,21 @@ private:
 	// Called to bind functionality to input
 	// virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
-	UPROPERTY(EditDefaultsOnly, Category = "Firing")
-	float LaunchSpeed = 1500;        // 1000 m/s default - find sensible value
+	// move to aiming component
+	// UPROPERTY(EditDefaultsOnly, Category = "Firing")
+	// float LaunchSpeed = 1500;        // 1000 m/s default - find sensible value
 
-	UPROPERTY(EditDefaultsOnly, Category = "Setup")
-	TSubclassOf<AProjectile> ProjectileBlueprint;      // https://docs.unrealengine.com/en-US/Programming/UnrealArchitecture/TSubclassOf/index.html
+	// UPROPERTY(EditDefaultsOnly, Category = "Setup")
+	// TSubclassOf<AProjectile> ProjectileBlueprint;      // https://docs.unrealengine.com/en-US/Programming/UnrealArchitecture/TSubclassOf/index.html
 
-	UTankBarrel* Barrel = nullptr;
+	//UTankBarrel* Barrel = nullptr;
 
 public:
-	void AimAt(FVector HitLocation);
+	//void AimAt(FVector HitLocation);
 	//UTankAimingComponent* GetTankAimingComponent() { return TankAimingComponent; }
 	
-	UFUNCTION(BluePrintCallable)
-	void Fire();
+	// UFUNCTION(BluePrintCallable)
+	// void Fire();
 
 	// UFUNCTION(BlueprintCallable, Category = "Setup")    // makes function callable from blueprint
 	// void SetBarrelReference(UTankBarrel* BarrelToSet);
@@ -58,8 +59,8 @@ public:
 	// UFUNCTION(BlueprintCallable, Category = "Setup")    // makes function callable from blueprint
 	// void SetTurretReference(UTankTurret* TurretToSet);
 
-	UPROPERTY(EditDefaultsOnly, Category = "Firing")
-	float ReloadTimeInSeconds = 3;
+	// UPROPERTY(EditDefaultsOnly, Category = "Firing")
+	// float ReloadTimeInSeconds = 3;
 
-	float LastFireTime = 0;     // use high precision timer for things like this
+	// float LastFireTime = 0;     // use high precision timer for things like this
 };

@@ -19,17 +19,17 @@ void UTankMovementComponent::RequestDirectMove(const FVector & MoveVelocity, boo
     // no need to call super - replacing functionality
     FVector TankForward = GetOwner()->GetActorForwardVector().GetSafeNormal();
     FVector AIForwardIntention = MoveVelocity.GetSafeNormal();
-    float ForwardThrow = FVector::DotProduct(TankForward, AIForwardIntention);
-    FVector RightThrow = FVector::CrossProduct(TankForward, AIForwardIntention);   // cross order matters
-    //UE_LOG(LogTemp, Warning, TEXT("%s moving toward %s"), *GetOwner()->GetName(), *MoveVelocity.GetSafeNormal().ToString());
 
+    float ForwardThrow = FVector::DotProduct(TankForward, AIForwardIntention);
     IntendMoveForward(ForwardThrow);
-    IntendTurnRight(RightThrow.Z);
+
+    float RightThrow = FVector::CrossProduct(TankForward, AIForwardIntention).Z;   // cross order matters
+    IntendTurnRight(RightThrow);
 }
 
 void UTankMovementComponent::IntendMoveForward(float Throw)
 {
-    if (!LeftTrack || !RightTrack){ return; }
+    if (!ensure(LeftTrack && RightTrack)) { return; }
     // UE_LOG(LogTemp, Warning, TEXT("IntendMoveForward() called with throw: %f"), Throw);
     LeftTrack->SetThrottle(Throw);
     RightTrack->SetThrottle(Throw);       // forward vector stacks with trigger throttles - FIX
@@ -37,7 +37,7 @@ void UTankMovementComponent::IntendMoveForward(float Throw)
 
 void UTankMovementComponent::IntendTurnRight(float Throw)
 {
-     if (!LeftTrack || !RightTrack){ return; }
+     if (!ensure(LeftTrack && RightTrack)) { return; }
     LeftTrack->SetThrottle(Throw);
     RightTrack->SetThrottle(-Throw);       
 }

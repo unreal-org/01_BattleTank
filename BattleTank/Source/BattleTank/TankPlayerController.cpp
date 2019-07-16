@@ -22,8 +22,9 @@ void ATankPlayerController::BeginPlay()
     // }
     // UE_LOG(LogTemp, Warning, TEXT("PlayerController Begin Play."));
 
-    UTankAimingComponent* AimingComponent = GetControlledTank()->FindComponentByClass<UTankAimingComponent>();
-    if (AimingComponent)
+    //UTankAimingComponent* AimingComponent = GetControlledTank()->FindComponentByClass<UTankAimingComponent>();
+    UTankAimingComponent* AimingComponent = GetPawn()->FindComponentByClass<UTankAimingComponent>();
+    if (ensure(AimingComponent))
     {
         FoundAimingComponent(AimingComponent);
     }
@@ -37,26 +38,27 @@ void ATankPlayerController::Tick(float DeltaTime)
 }
 
 
-ATank* ATankPlayerController::GetControlledTank() const    // take note of prefix "A"
-{
-    return Cast<ATank>(GetPawn());
-}
+// ATank* ATankPlayerController::GetControlledTank() const    // take note of prefix "A"
+// {
+//     //return Cast<ATank>(GetPawn());
+//     return GetPawn();
+// }
 
 void ATankPlayerController::AimTowardCrosshair()
 {
-    if (!GetControlledTank())
+    //if (!ensure(GetControlledTank())) { return; }
+    UTankAimingComponent* AimingComponent = GetPawn()->FindComponentByClass<UTankAimingComponent>();
+    if (ensure(AimingComponent))
     {
-        return;
-    }
-
     // float Time = GetWorld()->GetTimeSeconds();
     // UE_LOG(LogTemp, Warning, TEXT("%f: AimTowardCrosshair called."), Time);
 
-    FVector HitLocation; // OUT parameter
-    if (GetSightRayHitLocation(HitLocation))
-    {
-        //UE_LOG(LogTemp, Warning, TEXT("HitLocation: %s"), *HitLocation.ToString());
-        GetControlledTank()->AimAt(HitLocation);
+        FVector HitLocation; // OUT parameter
+        if (GetSightRayHitLocation(HitLocation))
+        {
+            //UE_LOG(LogTemp, Warning, TEXT("HitLocation: %s"), *HitLocation.ToString());
+            AimingComponent->AimAt(HitLocation);
+        }
     }
 }
 

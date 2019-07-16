@@ -9,6 +9,8 @@
 #include "Kismet/GameplayStaticsTypes.h"
 #include "Components/SceneComponent.h"
 #include "Math/Rotator.h"
+#include "Engine/World.h"
+#include "Projectile.h"
 
 // Sets default values for this component's properties
 UTankAimingComponent::UTankAimingComponent()
@@ -55,18 +57,14 @@ void UTankAimingComponent::TickComponent(float DeltaTime, ELevelTick TickType, F
 	// ...
 }
 
-UTankBarrel* UTankAimingComponent::GetBarrel()
-{
-	return Barrel;
-}
 
-void UTankAimingComponent::AimAt(FVector HitLocation, float LaunchSpeed)
+void UTankAimingComponent::AimAt(FVector HitLocation)//, float LaunchSpeed)
 {
 	// FString ThisTankName = GetOwner()->GetName();
 	// FString BarrelLocation = Barrel->GetComponentLocation().ToString();
 	// UE_LOG(LogTemp, Warning, TEXT("%s aiming at %s from %s."), *ThisTankName, *HitLocation.ToString(), *BarrelLocation);
 
-	if (!Barrel) { return; }
+	if (!ensure(Barrel)) { return; }
 
 	FVector OutLaunchVelocity(0);    // construct with 0
 	FVector StartLocation = Barrel->GetSocketLocation(FName("Projectile"));
@@ -99,7 +97,7 @@ void UTankAimingComponent::AimAt(FVector HitLocation, float LaunchSpeed)
 
 void UTankAimingComponent::MoveBarrelTowards(FVector AimDirection)
 {
-	if (!Barrel || !Turret) { return; }
+	if (!ensure(Barrel) || !ensure(Turret)) { return; }
 
 	// work out difference between current barrel rotation and aimdirection
 	FRotator BarrelRotation = Barrel->GetForwardVector().Rotation();
@@ -112,4 +110,23 @@ void UTankAimingComponent::MoveBarrelTowards(FVector AimDirection)
 	Barrel->Elevate(DeltaRotatorP.Pitch);
 	Turret->Rotate(DeltaRotatorY.Yaw);
 }
+
+void UTankAimingComponent::Fire()
+{
+	//UE_LOG(LogTemp, Warning, TEXT("Fire pressed."));
+	bool isReloaded = (GetWorld()->GetTimeSeconds() - LastFireTime) > ReloadTimeInSeconds;   // time in doubles
+	//if (ensure(TankAimingComponent)) { Barrel = TankAimingComponent->GetBarrel(); }
+	if (!ensure(Barrel && ProjectileBlueprint)) { return; }
+
+	if (isReloaded) { 
+		// spawn projectile at barrel firing socket
+		FVector SpawnLocation = Barrel->GetSocketLocation(FName("Projectile"));
+		FRotator SpawnRotation = Barrel->GetSocketRotation(FName("Projectile"));
+		AProjectile* Projectile = GetWorld()->SpawnActor<AProjectile>(ProjectileBlueprint, SpawnLocation, SpawnRotation);
+
+		Projectile->LaunchProjectile(LaunchSpeed);
+		LastFireTime = GetWorld()->GetTimeSeconds();
+	}
+}
+
 

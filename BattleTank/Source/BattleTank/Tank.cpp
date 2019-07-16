@@ -2,14 +2,15 @@
 
 
 #include "Tank.h"
-#include "TankAimingComponent.h"
-#include "UObject/UObjectGlobals.h"
-#include "Engine/World.h"
-#include "Components/SceneComponent.h"
-#include "Math/Rotator.h"
-#include "TankBarrel.h"
-#include "Projectile.h"
-#include "TankMovementComponent.h"
+//#include "TankAimingComponent.h"
+// #include "UObject/UObjectGlobals.h"
+// #include "Engine/World.h"
+// #include "Components/SceneComponent.h"
+// #include "Math/Rotator.h"
+// #include "TankBarrel.h"
+// #include "Projectile.h"
+// //#include "TankMovementComponent.h"
+// #include "GameFramework/Actor.h"
 
 
 // Sets default values
@@ -23,11 +24,12 @@ ATank::ATank()
 }
 
 // Called when the game starts or when spawned
-void ATank::BeginPlay()
-{
-	Super::BeginPlay();  // needed for blueprint beginplay
+// void ATank::BeginPlay()
+// {
+// 	Super::BeginPlay();  // needed for blueprint beginplay
 
-}
+// 	//TankAimingComponent = FindComponentByClass<UTankAimingComponent>();
+// }
 
 // Called every frame
 // void ATank::Tick(float DeltaTime)
@@ -42,11 +44,11 @@ void ATank::BeginPlay()
 // 	Super::SetupPlayerInputComponent(PlayerInputComponent);
 // }
 
-void ATank::AimAt(FVector HitLocation)
-{
-	if (!TankAimingComponent) { return; }
-	TankAimingComponent->AimAt(HitLocation, LaunchSpeed);
-}
+// void ATank::AimAt(FVector HitLocation)
+// {
+// 	if (!ensure(TankAimingComponent)) { return; }
+// 	TankAimingComponent->AimAt(HitLocation, LaunchSpeed);
+// }
 
 // void ATank::SetBarrelReference(UTankBarrel* BarrelToSet)
 // {
@@ -59,20 +61,21 @@ void ATank::AimAt(FVector HitLocation)
 // 	TankAimingComponent->SetTurretReference(TurretToSet);
 // }
 
-void ATank::Fire()
-{
-	//UE_LOG(LogTemp, Warning, TEXT("Fire pressed."));
-	bool isReloaded = (GetWorld()->GetTimeSeconds() - LastFireTime) > ReloadTimeInSeconds;   // time in doubles
-	if (TankAimingComponent) { Barrel = TankAimingComponent->GetBarrel(); }
+// void ATank::Fire()
+// {
+// 	//UE_LOG(LogTemp, Warning, TEXT("Fire pressed."));
+// 	bool isReloaded = (GetWorld()->GetTimeSeconds() - LastFireTime) > ReloadTimeInSeconds;   // time in doubles
+// 	//if (ensure(TankAimingComponent)) { Barrel = TankAimingComponent->GetBarrel(); }
+// 	if (!ensure(Barrel)) { return; }
 
-	if (Barrel && isReloaded) { 
-		// spawn projectile at barrel firing socket
-		FVector SpawnLocation = Barrel->GetSocketLocation(FName("Projectile"));
-		FRotator SpawnRotation = Barrel->GetSocketRotation(FName("Projectile"));
-		AProjectile* Projectile = GetWorld()->SpawnActor<AProjectile>(ProjectileBlueprint, SpawnLocation, SpawnRotation);
+// 	if (isReloaded) { 
+// 		// spawn projectile at barrel firing socket
+// 		FVector SpawnLocation = Barrel->GetSocketLocation(FName("Projectile"));
+// 		FRotator SpawnRotation = Barrel->GetSocketRotation(FName("Projectile"));
+// 		AProjectile* Projectile = GetWorld()->SpawnActor<AProjectile>(ProjectileBlueprint, SpawnLocation, SpawnRotation);
 
-		Projectile->LaunchProjectile(LaunchSpeed);
-		LastFireTime = GetWorld()->GetTimeSeconds();
-	}
-}
+// 		Projectile->LaunchProjectile(LaunchSpeed);
+// 		LastFireTime = GetWorld()->GetTimeSeconds();
+// 	}
+// }
 
