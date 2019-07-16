@@ -41,10 +41,10 @@ public:
 	
 protected:
 	// Called when the game starts
-	// virtual void BeginPlay() override;
+	virtual void BeginPlay() override;
 
 	UPROPERTY(BlueprintReadOnly, Category = "Status")    // access from tank aiming component bp - protect
-	EFiringStatus FiringStatus = EFiringStatus::Aiming;
+	EFiringStatus FiringStatus = EFiringStatus::Reloading;
 
 public:	
 	// Called every frame
@@ -60,6 +60,7 @@ public:
 	UFUNCTION(BluePrintCallable)
 	void Fire();
 
+	
 private:
 	UTankBarrel* Barrel = nullptr;
 	UTankTurret* Turret = nullptr;
@@ -71,4 +72,6 @@ private:
 	UPROPERTY(EditDefaultsOnly, Category = "Setup")
 	TSubclassOf<AProjectile> ProjectileBlueprint;      // https://docs.unrealengine.com/en-US/Programming/UnrealArchitecture/TSubclassOf/index.html
 
+	bool IsBarrelMoving();
+	FVector AimDirection;
 };
