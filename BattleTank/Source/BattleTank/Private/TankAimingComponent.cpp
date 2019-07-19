@@ -63,7 +63,11 @@ void UTankAimingComponent::TickComponent(float DeltaTime, ELevelTick TickType, F
 	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
 
 	// for reticle color mapping
-	if((GetWorld()->GetTimeSeconds() - LastFireTime) < ReloadTimeInSeconds)
+	if (Ammo <= 0)
+	{
+		FiringStatus = EFiringStatus::OutOfAmmo;
+	}
+	else if ((GetWorld()->GetTimeSeconds() - LastFireTime) < ReloadTimeInSeconds)
 	{
 		FiringStatus = EFiringStatus::Reloading;
 	}
@@ -148,7 +152,7 @@ void UTankAimingComponent::Fire()
 	//if (!ensure(Barrel && ProjectileBlueprint)) { return; }
 
 	//if (isReloaded) { 
-	if (FiringStatus != EFiringStatus::Reloading) {
+	if (FiringStatus == EFiringStatus::Aiming || FiringStatus == EFiringStatus::Locked) {
 		if (!ensure(Barrel && ProjectileBlueprint)) { return; }
 
 		// spawn projectile at barrel firing socket
@@ -158,6 +162,7 @@ void UTankAimingComponent::Fire()
 
 		Projectile->LaunchProjectile(LaunchSpeed);
 		LastFireTime = GetWorld()->GetTimeSeconds();
+		Ammo--;
 	}
 }
 
@@ -166,3 +171,8 @@ EFiringStatus UTankAimingComponent::GetFiringStatus() const
 	return FiringStatus;
 }
 
+
+int UTankAimingComponent::GetAmmo() const
+{
+	return Ammo;
+}

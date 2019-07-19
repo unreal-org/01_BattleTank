@@ -14,7 +14,8 @@ enum class EFiringStatus : uint8
 {
 	Reloading,
 	Aiming,
-	Locked
+	Locked,
+	OutOfAmmo
 };
 
 // Forward Declaration
@@ -47,6 +48,7 @@ protected:
 	UPROPERTY(BlueprintReadOnly, Category = "Status")    // access from tank aiming component bp - protect
 	EFiringStatus FiringStatus = EFiringStatus::Reloading;
 
+
 public:	
 	// Called every frame
 	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
@@ -58,10 +60,12 @@ public:
 
 	float LastFireTime = 0;     // use high precision timer for things like this
 
-	UFUNCTION(BluePrintCallable)
+	UFUNCTION(BluePrintCallable, Category = "Firing")
 	void Fire();
 
-	
+	UFUNCTION(BluePrintCallable, Category = "Firing")
+	int GetAmmo() const;
+
 private:
 	UTankBarrel* Barrel = nullptr;
 	UTankTurret* Turret = nullptr;
@@ -75,4 +79,6 @@ private:
 
 	bool IsBarrelMoving();
 	FVector AimDirection;
+
+	int Ammo = 3;
 };
