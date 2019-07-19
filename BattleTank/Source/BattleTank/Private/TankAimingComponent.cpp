@@ -12,6 +12,7 @@
 #include "Engine/World.h"
 #include "Projectile.h"
 #include "Math/Vector.h"
+#include "Math/UnrealMathUtility.h"
 
 // Sets default values for this component's properties
 UTankAimingComponent::UTankAimingComponent()
@@ -127,7 +128,15 @@ void UTankAimingComponent::MoveBarrelTowards(FVector AimDirection)
 	//UE_LOG(LogTemp, Warning, TEXT("Aim Rotation is: %s."), *AimAsRotator.ToString());
 	
 	Barrel->Elevate(DeltaRotatorP.Pitch);
-	Turret->Rotate(DeltaRotatorY.Yaw);
+	if (FMath::Abs(DeltaRotatorY.Yaw) < 180)  // always yaw shortest way
+	{
+		Turret->Rotate(DeltaRotatorY.Yaw);
+	}
+	else
+	{
+		Turret->Rotate(-DeltaRotatorY.Yaw);
+	}
+	
 }
 
 void UTankAimingComponent::Fire()
@@ -152,4 +161,8 @@ void UTankAimingComponent::Fire()
 	}
 }
 
+EFiringStatus UTankAimingComponent::GetFiringStatus() const
+{
+	return FiringStatus;
+}
 

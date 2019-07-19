@@ -78,10 +78,10 @@ bool ATankPlayerController::GetSightRayHitLocation(FVector& HitLocation) const
         //UE_LOG(LogTemp, Warning, TEXT("Look Direction is %s"), *CameraWorldDirection.ToString());     // unit vector
        
         // Line-Trace along said direction and get HitLocation
-        GetLookVectorHitLocation(CameraWorldDirection, HitLocation);
+        return GetLookVectorHitLocation(CameraWorldDirection, HitLocation);
     }
 
-    return true;
+    return false;
 }
 
 bool ATankPlayerController::GetLookDirection(FVector2D ScreenLocation, FVector& CameraWorldLocation, FVector& CameraWorldDireciton) const

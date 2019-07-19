@@ -48,9 +48,12 @@ void ATankAIController::Tick(float DeltaTime)
     if(!ensure(AimingComponent)) { return; }
     AimingComponent->AimAt(PlayerTank->GetActorLocation());
     
-    // FIX FIRING
+    // FIX FIRING / for aiming for locked
     //ControlledTank->Fire();
-    AimingComponent->Fire();
+    if (AimingComponent->GetFiringStatus() == EFiringStatus::Locked)
+    {
+        AimingComponent->Fire();
+    }
 }
 
 // ATank* ATankAIController::GetControlledTank() const    // take note of prefix "A"

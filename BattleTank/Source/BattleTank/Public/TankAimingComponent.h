@@ -38,6 +38,7 @@ public:
 	UFUNCTION(BluePrintCallable, Category = "Setup")      
 	void Initialize(UTankBarrel* BarrelToSet, UTankTurret* TurretToSet);
 
+	EFiringStatus GetFiringStatus() const;
 	
 protected:
 	// Called when the game starts

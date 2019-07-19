@@ -23,6 +23,8 @@ private:
 	virtual void BeginPlay() override;      // override AActor's virtual BeginPlay
 
 	virtual void Tick(float DeltaTime) override;
-	
+
+protected:
+	UPROPERTY(EditDefaultsOnly, Category = "Setup")
 	float AcceptanceRadius = 2000;
 };
