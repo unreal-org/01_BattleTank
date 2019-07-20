@@ -35,8 +35,8 @@ void ATankAIController::Tick(float DeltaTime)
 {
     Super::Tick(DeltaTime);
 
-    ATank* PlayerTank = Cast<ATank>(GetWorld()->GetFirstPlayerController()->GetPawn());
-    ATank* ControlledTank = Cast<ATank>(GetPawn());
+    APawn* PlayerTank = GetWorld()->GetFirstPlayerController()->GetPawn(); // no need to cast to atank anymore
+    APawn* ControlledTank = GetPawn();
 
     if (!ensure(ControlledTank && PlayerTank)) { return; }
 

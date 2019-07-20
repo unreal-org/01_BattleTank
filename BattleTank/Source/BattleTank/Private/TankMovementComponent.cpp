@@ -30,7 +30,7 @@ void UTankMovementComponent::RequestDirectMove(const FVector & MoveVelocity, boo
 void UTankMovementComponent::IntendMoveForward(float Throw)
 {
     if (!ensure(LeftTrack && RightTrack)) { return; }
-    // UE_LOG(LogTemp, Warning, TEXT("IntendMoveForward() called with throw: %f"), Throw);
+    //UE_LOG(LogTemp, Warning, TEXT("IntendMoveForward() called with throw: %f"), Throw);
     LeftTrack->SetThrottle(Throw);
     RightTrack->SetThrottle(Throw);       // forward vector stacks with trigger throttles - FIX
 }
