@@ -1,13 +1,6 @@
 {
 	"version": "0.2.0",
 	"configurations": [
-	{
-		"name": "(BattleTank) Attach",
-		"type": "cppvsdbg",
-		"request": "attach",
-		"processId": "${command:pickProcess}"
-		"visualizerFile": "C:\\Program Files\\Epic Games\\UE_4.22\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
-	},
 		{
 			"name": "BattleTank (Debug)",
 			"request": "launch",
