@@ -5,7 +5,7 @@
 			"name": "BattleTank (Debug)",
 			"request": "launch",
 			"preLaunchTask": "BattleTank Win64 Debug Build",
-			"program": "C:\\Users\\KC\\Documents\\Unreal Projects\\Repository\\01_BattleTank\\BattleTank\\Binaries\\Win64\\BattleTank-Win64-Debug.exe",
+			"program": "C:\\Users\\kevin\\Documents\\Unreal Repository\\00_BattleTank\\BattleTank\\Binaries\\Win64\\BattleTank-Win64-Debug.exe",
 			"args": [
 			],
 			"cwd": "C:\\Program Files\\Epic Games\\UE_4.22",
@@ -18,7 +18,7 @@
 			"name": "BattleTank (DebugGame)",
 			"request": "launch",
 			"preLaunchTask": "BattleTank Win64 DebugGame Build",
-			"program": "C:\\Users\\KC\\Documents\\Unreal Projects\\Repository\\01_BattleTank\\BattleTank\\Binaries\\Win64\\BattleTank-Win64-DebugGame.exe",
+			"program": "C:\\Users\\kevin\\Documents\\Unreal Repository\\00_BattleTank\\BattleTank\\Binaries\\Win64\\BattleTank-Win64-DebugGame.exe",
 			"args": [
 			],
 			"cwd": "C:\\Program Files\\Epic Games\\UE_4.22",
@@ -31,7 +31,7 @@
 			"name": "BattleTank (Development)",
 			"request": "launch",
 			"preLaunchTask": "BattleTank Win64 Development Build",
-			"program": "C:\\Users\\KC\\Documents\\Unreal Projects\\Repository\\01_BattleTank\\BattleTank\\Binaries\\Win64\\BattleTank.exe",
+			"program": "C:\\Users\\kevin\\Documents\\Unreal Repository\\00_BattleTank\\BattleTank\\Binaries\\Win64\\BattleTank.exe",
 			"args": [
 			],
 			"cwd": "C:\\Program Files\\Epic Games\\UE_4.22",
@@ -44,7 +44,7 @@
 			"name": "BattleTank (Shipping)",
 			"request": "launch",
 			"preLaunchTask": "BattleTank Win64 Shipping Build",
-			"program": "C:\\Users\\KC\\Documents\\Unreal Projects\\Repository\\01_BattleTank\\BattleTank\\Binaries\\Win64\\BattleTank-Win64-Shipping.exe",
+			"program": "C:\\Users\\kevin\\Documents\\Unreal Repository\\00_BattleTank\\BattleTank\\Binaries\\Win64\\BattleTank-Win64-Shipping.exe",
 			"args": [
 			],
 			"cwd": "C:\\Program Files\\Epic Games\\UE_4.22",
@@ -57,7 +57,7 @@
 			"name": "BattleTank (Test)",
 			"request": "launch",
 			"preLaunchTask": "BattleTank Win64 Test Build",
-			"program": "C:\\Users\\KC\\Documents\\Unreal Projects\\Repository\\01_BattleTank\\BattleTank\\Binaries\\Win64\\BattleTank-Win64-Test.exe",
+			"program": "C:\\Users\\kevin\\Documents\\Unreal Repository\\00_BattleTank\\BattleTank\\Binaries\\Win64\\BattleTank-Win64-Test.exe",
 			"args": [
 			],
 			"cwd": "C:\\Program Files\\Epic Games\\UE_4.22",
@@ -72,7 +72,7 @@
 			"preLaunchTask": "BattleTankEditor Win64 Debug Build",
 			"program": "C:\\Program Files\\Epic Games\\UE_4.22\\Engine\\Binaries\\Win64\\UE4Editor-Win64-Debug.exe",
 			"args": [
-				"C:\\Users\\KC\\Documents\\Unreal Projects\\Repository\\01_BattleTank\\BattleTank\\BattleTank.uproject"
+				"C:\\Users\\kevin\\Documents\\Unreal Repository\\00_BattleTank\\BattleTank\\BattleTank.uproject"
 			],
 			"cwd": "C:\\Program Files\\Epic Games\\UE_4.22",
 			"stopAtEntry": false,
@@ -86,7 +86,7 @@
 			"preLaunchTask": "BattleTankEditor Win64 DebugGame Build",
 			"program": "C:\\Program Files\\Epic Games\\UE_4.22\\Engine\\Binaries\\Win64\\UE4Editor.exe",
 			"args": [
-				"C:\\Users\\KC\\Documents\\Unreal Projects\\Repository\\01_BattleTank\\BattleTank\\BattleTank.uproject"
+				"C:\\Users\\kevin\\Documents\\Unreal Repository\\00_BattleTank\\BattleTank\\BattleTank.uproject"
 			],
 			"cwd": "C:\\Program Files\\Epic Games\\UE_4.22",
 			"stopAtEntry": false,
@@ -100,7 +100,7 @@
 			"preLaunchTask": "BattleTankEditor Win64 Development Build",
 			"program": "C:\\Program Files\\Epic Games\\UE_4.22\\Engine\\Binaries\\Win64\\UE4Editor.exe",
 			"args": [
-				"C:\\Users\\KC\\Documents\\Unreal Projects\\Repository\\01_BattleTank\\BattleTank\\BattleTank.uproject"
+				"C:\\Users\\kevin\\Documents\\Unreal Repository\\00_BattleTank\\BattleTank\\BattleTank.uproject"
 			],
 			"cwd": "C:\\Program Files\\Epic Games\\UE_4.22",
 			"stopAtEntry": false,
@@ -117,7 +117,7 @@
 			"args": [
 				"-projectfiles",
 				"-vscode",
-				"-project=\"C:\\Users\\KC\\Documents\\Unreal Projects\\Repository\\01_BattleTank\\BattleTank\\BattleTank.uproject\"",
+				"-project=\"C:\\Users\\kevin\\Documents\\Unreal Repository\\00_BattleTank\\BattleTank\\BattleTank.uproject\"",
 				"-game",
 				"-engine"
 			],

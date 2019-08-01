@@ -1,8 +1,8 @@
 {
 	"files.exclude": {
-		"C:/Users/KC/Documents/Unreal Projects/Repository/01_BattleTank/BattleTank/.vscode": true,
-		"C:/Users/KC/Documents/Unreal Projects/Repository/01_BattleTank/BattleTank/Content": true,
-		"C:/Users/KC/Documents/Unreal Projects/Repository/01_BattleTank/BattleTank/Intermediate": true,
-		"C:/Users/KC/Documents/Unreal Projects/Repository/01_BattleTank/BattleTank/Saved": true
+		"C:/Users/kevin/Documents/Unreal Repository/00_BattleTank/BattleTank/.vscode": true,
+		"C:/Users/kevin/Documents/Unreal Repository/00_BattleTank/BattleTank/Content": true,
+		"C:/Users/kevin/Documents/Unreal Repository/00_BattleTank/BattleTank/Intermediate": true,
+		"C:/Users/kevin/Documents/Unreal Repository/00_BattleTank/BattleTank/Saved": true
 	}
 }
