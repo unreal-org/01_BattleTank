@@ -7,6 +7,8 @@
 #include "Engine/EngineTypes.h"
 #include "GameFramework/Actor.h"
 #include "PhysicsEngine/RadialForceComponent.h"
+#include "Kismet/GameplayStatics.h"
+#include "UObject/Class.h"
 
 // Sets default values
 AProjectile::AProjectile()
@@ -64,6 +66,16 @@ void AProjectile::OnHit(UPrimitiveComponent* HitComponent, AActor* OtherActor, U
 
 	SetRootComponent(ImpactBlast);
 	CollisionMesh->DestroyComponent();
+
+	// apply damage
+	UGameplayStatics::ApplyRadialDamage(
+		this,
+		ProjectileDamage,
+		GetActorLocation(),
+		ExplosionForce->Radius,   // for consistency
+		UDamageType::StaticClass(),
+		TArray<AActor*>()  // damage all actors
+	);
 
 	// projectile mesh clean-up
 	FTimerHandle Timer;

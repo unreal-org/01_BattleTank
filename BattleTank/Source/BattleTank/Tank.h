@@ -31,6 +31,12 @@ private:
 	// Sets default values for this pawn's properties
 	ATank();
 
+	UPROPERTY(EditDefaultsOnly, Category = "Setup")
+	int32 StartingHealth = 100;
+
+	UPROPERTY(VisibleAnywhere, Category = "Health")
+	int32 CurrentHealth = StartingHealth;
+	
 	// Called every frame
 	// virtual void Tick(float DeltaTime) override; // not needed
 
@@ -47,6 +53,13 @@ private:
 	//UTankBarrel* Barrel = nullptr;
 
 public:
+	// called by engine when damage is dealt to actor by projectile's onhit applyradialdamage
+	virtual float TakeDamage(float DamageAmount, struct FDamageEvent const & DamageEvent, class AController * EventInstigator, AActor * DamageCauser) override;
+
+	// returns current health as a percentage of starting health
+	UFUNCTION(BlueprintPure, Category = "Health")
+	float GetHealthPercent() const;
+
 	//void AimAt(FVector HitLocation);
 	//UTankAimingComponent* GetTankAimingComponent() { return TankAimingComponent; }
 	
