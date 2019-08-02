@@ -44,4 +44,9 @@ private:
 	bool GetSightRayHitLocation(FVector& HitLocation) const;
 	bool GetLookDirection(FVector2D ScreenLocation, FVector& CameraWorldLocation, FVector& CameraWorldDireciton) const;
 	bool GetLookVectorHitLocation(FVector& CameraWorldDirection, FVector& HitLocation) const;
+
+	UFUNCTION()
+	void OnPlayerTankDeath();
+
+	virtual void SetPawn(APawn* InPawn) override;
 };	

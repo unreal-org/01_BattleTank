@@ -2,7 +2,7 @@
 
 #pragma once
 
-#include "Tank.h"
+//#include "Tank.h"
 //#include "TankAimingComponent.h"
 
 #include "CoreMinimal.h"
@@ -23,6 +23,11 @@ private:
 	virtual void BeginPlay() override;      // override AActor's virtual BeginPlay
 
 	virtual void Tick(float DeltaTime) override;
+
+	virtual void SetPawn(APawn* InPawn) override;
+
+	UFUNCTION()
+	void OnPossessedTankDeath();
 
 protected:
 	UPROPERTY(EditDefaultsOnly, Category = "Setup")

@@ -3,6 +3,9 @@
 
 #include "TankAIController.h"
 #include "TankAimingComponent.h"
+#include "Tank.h"
+#include "GameFramework/Controller.h"
+#include "GameFramework/Pawn.h"
 
 
 void ATankAIController::BeginPlay()
@@ -30,6 +33,25 @@ void ATankAIController::BeginPlay()
     // }
 }
 
+// ondeath called on setpawn for ensure reasons
+void ATankAIController::SetPawn(APawn* InPawn)
+{
+    Super::SetPawn(InPawn);
+    if (InPawn)
+    {
+        ATank* PossessedTank = Cast<ATank>(InPawn);
+        if (!ensure(PossessedTank)) { return; }
+
+        // subscribe our local method and listen to the tank's death broadcast
+        PossessedTank->OnDeath.AddUniqueDynamic(this, &ATankAIController::OnPossessedTankDeath);
+    }
+}
+
+void ATankAIController::OnPossessedTankDeath()
+{
+    if (!GetPawn()) { return; }
+    GetPawn()->DetachFromControllerPendingDestroy();
+}
 
 void ATankAIController::Tick(float DeltaTime)
 {

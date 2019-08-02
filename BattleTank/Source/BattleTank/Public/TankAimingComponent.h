@@ -80,5 +80,6 @@ private:
 	bool IsBarrelMoving();
 	FVector AimDirection;
 
-	int Ammo = 3;
+	UPROPERTY(EditDefaultsOnly, Category = "Firing")
+	int Ammo = 10;
 };

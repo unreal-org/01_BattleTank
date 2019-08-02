@@ -34,7 +34,7 @@ float ATank::TakeDamage(float DamageAmount, struct FDamageEvent const & DamageEv
 	CurrentHealth = CurrentHealth - DamageToApply;
 	if (CurrentHealth <= 0)
 	{
-
+			OnDeath.Broadcast();   // general broadcast of death - not specifically to anything
 	}
 
 	return DamageToApply;
@@ -47,12 +47,13 @@ float ATank::GetHealthPercent() const
 
 
 // Called when the game starts or when spawned
-// void ATank::BeginPlay()
-// {
-// 	Super::BeginPlay();  // needed for blueprint beginplay
+void ATank::BeginPlay()
+{
+	Super::BeginPlay();  // needed for blueprint beginplay
 
-// 	//TankAimingComponent = FindComponentByClass<UTankAimingComponent>();
-// }
+	//TankAimingComponent = FindComponentByClass<UTankAimingComponent>();
+	CurrentHealth = StartingHealth;
+}
 
 // Called every frame
 // void ATank::Tick(float DeltaTime)

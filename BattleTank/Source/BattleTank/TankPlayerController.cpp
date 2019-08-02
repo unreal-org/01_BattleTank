@@ -7,6 +7,8 @@
 //#include "Public/CollisionQueryParams.h"
 #include "GameFramework/Actor.h"
 #include "TankAimingComponent.h"
+#include "GameFramework/PlayerController.h"
+#include "Tank.h"
 
 void ATankPlayerController::BeginPlay()
 {
@@ -37,6 +39,23 @@ void ATankPlayerController::Tick(float DeltaTime)
     AimTowardCrosshair();
 }
 
+void ATankPlayerController::SetPawn(APawn* InPawn)
+{
+    Super::SetPawn(InPawn);
+    if (InPawn)
+    {
+        ATank* PlayerTank = Cast<ATank>(InPawn);
+        if (!ensure(PlayerTank)) { return; }
+
+        // subscribe our local method and listen to the tank's death broadcast
+        PlayerTank->OnDeath.AddUniqueDynamic(this, &ATankPlayerController::OnPlayerTankDeath);
+    }
+}
+
+void ATankPlayerController::OnPlayerTankDeath()
+{
+    StartSpectatingOnly();
+}
 
 // ATank* ATankPlayerController::GetControlledTank() const    // take note of prefix "A"
 // {
